@@ -1,0 +1,7 @@
+title: Between One and Zero
+description: A cybersecurity blog about defense with an attacker mindset
+markdown: kramdown
+highlighter: rouge
+theme: null
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"

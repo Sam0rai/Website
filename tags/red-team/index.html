@@ -1,0 +1,12 @@
+---
+layout: striped-default
+title: "Tag: red-team"
+---
+
+<h1><b>Blog posts with the tag:</b> #red-team</h1>
+
+<ul>
+  {% for post in site.tags.red-team %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,108 @@
+---
+layout: striped-base
+---
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<!-- Content -->
+	<div id="content">
+		<div class="inner">
+
+			<!-- Post -->
+				<article class="box post">
+					<section id="main" class="wrapper style5">
+					  <div class="inner">
+					  {% if page.layout == "default" and page.title %}
+						  <header class="post-header">
+							<h1>{{ page.title }} </h1>
+							<p class="date">{{ page.date | date: "%B %d, %Y" }}</p>
+
+							{% if page.tags %}
+							  <ul class="tags">
+								{% for tag in page.tags %}
+								  <li><a href="/tags/{{ tag }}/">#{{ tag }}</a></li>
+								{% endfor %}
+							  </ul>
+							{% endif %}
+						  </header>
+						{% endif %}
+						
+						{{ content }}
+					  </div>
+					</section>
+				</article>
+
+			<!-- Pagination -->
+				<div class="pagination">
+					<!--<a href="#" class="button previous">Previous Page</a>-->
+					<div class="pages">
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<span>&hellip;</span>
+						<a href="#">20</a>
+					</div>
+					<a href="#" class="button next">Next Page</a>
+				</div>
+
+		</div>
+	</div>
+
+<!-- Sidebar -->
+	<div id="sidebar">
+
+		<!-- Logo -->
+			<h1 id="logo"><a href="/">Between One and Zero</a></h1>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="current"><a href="#">Latest Post</a></li>
+					<li><a href="#">About Me</a></li>
+				</ul>
+			</nav>
+
+		<!-- Search -->
+			<section class="box search">
+				<input type="text" id="search-input" class="text" placeholder="Search" />
+				<ul id="results-container"></ul>
+			</section>
+			{% include search.html %}
+
+
+		<!-- Text -->
+			<section class="box text-style1">
+				<div class="inner">
+					<p>
+						<strong>Between One and Zero: </strong>A cybersecurity blog about defense with an attacker mindset.
+					</p>
+				</div>
+			</section>
+
+		<!-- Recent Posts -->
+			<section class="box recent-posts">
+				<header>
+					<h2>Recent Posts</h2>
+				</header>
+				<ul>
+					<li><a href="#">Lorem ipsum dolor</a></li>
+					<li><a href="#">Feugiat nisl aliquam</a></li>
+				</ul>
+			</section>
+
+		<!-- Copyright -->
+			<ul id="copyright">
+				<li>&copy; Sam0rai.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+
+	</div>
+
+<!-- Scripts -->
+	<script src="/assets-striped/js/jquery.min.js"></script>
+	<script src="/assets-striped/js/browser.min.js"></script>
+	<script src="/assets-striped/js/breakpoints.min.js"></script>
+	<script src="/assets-striped/js/util.js"></script>
+	<script src="/assets-striped/js/main.js"></script>
