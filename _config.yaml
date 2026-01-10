@@ -1,5 +1,7 @@
 title: Between One and Zero
 description: A cybersecurity blog about defense with an attacker mindset
+url: "https://yaronking.com"
+baseurl: ""
 markdown: kramdown
 highlighter: rouge
 theme: null

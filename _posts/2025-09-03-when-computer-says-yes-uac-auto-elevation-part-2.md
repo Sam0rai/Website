@@ -6,10 +6,9 @@ tags: [blue-team, uac]
 ---
 
 ## How Attackers Abuse Auto-Elevation
-<img src="/assets-striped/posts/2025-09-03-when-computer-says-yes-uac-auto-elevation-part-2/Computer-Says-Yes.jpg" alt="Computer Says Yes" class="center-image">
-
 As we’ve previously mentioned, auto-elevation doesn’t grant magical powers to every user; a standard (non-admin) user cannot force elevation via these binaries. But if the logged-in user is a local admin (running most apps in medium-integrity mode), auto-elevated binaries can be hijacked.
 Let us note that abusing auto-elevation allows for a stealthier privilege escalation; by using trusted Windows binaries instead of dropping custom malware, attackers minimize their detection footprint. Defenders may see “normal system activity” in their logs… unless they dig deeper.
+<img src="/assets-striped/posts/2025-09-03-when-computer-says-yes-uac-auto-elevation-part-2/Computer-Says-Yes.jpg" alt="Computer Says Yes" class="center-image">
 <!--more-->
 
 Common attacker techniques include:
