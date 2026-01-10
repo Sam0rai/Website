@@ -55,13 +55,13 @@ layout: striped-base
 	<div id="sidebar">
 
 		<!-- Logo -->
-			<h1 id="logo"><a href="/">Between One and Zero</a></h1>
+			<h1 id="logo"><a href="/blog/">Between One and Zero</a></h1>
 
 		<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li class="current"><a href="#">Latest Post</a></li>
-					<li><a href="#">About Me</a></li>
+					<li class="current"><a href="{{ site.posts.first.url | relative_url }}">Latest Post</a></li>
+					<li><a href="/">About Me</a></li>
 				</ul>
 			</nav>
 
@@ -88,8 +88,11 @@ layout: striped-base
 					<h2>Recent Posts</h2>
 				</header>
 				<ul>
-					<li><a href="#">Lorem ipsum dolor</a></li>
-					<li><a href="#">Feugiat nisl aliquam</a></li>
+					{% for post in site.posts limit:4 %}
+					<li>
+						<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+					</li>
+					{% endfor %}
 				</ul>
 			</section>
 
