@@ -8,7 +8,8 @@ tags: [rea-team, evasion]
 ## Throwback to college
 When I started my Bachelor’s Degree in Computer Science, one of our first courses was an introduction to C++, where we learned all about variables, conditions, loops, recursion, and of course – pointers. <br>
 Later on we proceeded to learn more advanced topics, such as inheritance, polymorphism and… pointers to pointers.
-While we were told that our variables and functions needed to be documented and have concise and revealing names to better understand their purpose, a friend of mine stuck to laconic phrasing, with naming conventions such as “bigNum” for a variable or “makePointer” for a function. His best idea for a name for a function that creates a pointer to a given pointer was: “make_pp”. 😉
+While we were told that our variables and functions needed to be documented and have concise and revealing names to better understand their purpose, a friend of mine stuck to laconic phrasing, with naming conventions such as “bigNum” for a variable or “makePointer” for a function. His best idea for a name for a function that creates a pointer to a given pointer was: “make_pp”. 😉 <br>
+<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/Security-Guard-Two-Doors.png" alt="Two Doors, One Guard" class="center-image" style="max-width:100%; height:auto;">
 <!--more-->
 
 Unlike us college students back in the day, the Windows internals API has (for the most of it) concise names for its functions. When we see functions such as _“WriteFile”_ or _“ReadProcessMemory”_, we’ve got a pretty good idea of what they are supposed to do.
