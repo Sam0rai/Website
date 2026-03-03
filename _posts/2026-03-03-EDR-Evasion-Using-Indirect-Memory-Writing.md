@@ -31,7 +31,7 @@ From the defender’s perspective, these calls look like normal file or memory o
 
 ## How Windows Memory APIs Enable the Trick
 Let’s review the syntax for the “ReadProcessMemory” function:
-<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/ReadProcessMemory-Prototype.png" alt="ReadProcessMemory Prototype" class="center-image">
+<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/ReadProcessMemory-Prototype.png" alt="ReadProcessMemory Prototype" class="center-image" style="max-width:100%; height:auto;">
 The official purpose (per Microsoft documentation) is simple: **Read data from another process’s memory** – providing:
 - _hProcess_: handle to the target process
 -	_lpBaseAddress_: address to read from
