@@ -26,7 +26,7 @@ For example: <br>
 The function <i>“ReadFile”</i> accepts pointers where the OS stores the number of bytes written or read upon completion.
 If you control that **“out”** pointer, you control where the OS writes the value – and thus can feed arbitrary bytes into a target buffer!<br>
 From the defender’s perspective, these calls look like normal file or memory operations; no obvious memory-write behavior to trip heuristic scanners.
-<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/ReadFile-You-Keep-Using-That-Word.jpg" alt="You Keep Using That Word" class="center-image">
+<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/ReadFile-You-Keep-Using-That-Word.jpg" alt="You Keep Using That Word" class="center-image" style="max-width:100%; height:auto;">
 <br><br>
 
 ## How Windows Memory APIs Enable the Trick
