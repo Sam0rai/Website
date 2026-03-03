@@ -56,7 +56,7 @@ ReadProcessMemory(
 );
 ```
 and let the OS write _payloadByte_ into _targetMemory+offset_ via the _lpNumberOfBytesRead_ pointer – byte by byte.
-<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/You-Were-Supposed-To-Read-From-Memory.jpg" alt="You Were Supposed To READ From Memory" class="center-image">
+<img src="/assets-striped/posts\2026-03-03-EDR-Evasion-Using-Indirect-Memory-Writing/You-Were-Supposed-To-Read-From-Memory.jpg" alt="You Were Supposed To READ From Memory" class="center-image" style="max-width:100%; height:auto;">
 <br>
 
 ## Why This Breaks the Defensive Model
